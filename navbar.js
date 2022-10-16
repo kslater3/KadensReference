@@ -14,6 +14,94 @@ class NavigationMenu {
 			}
 		},
 
+		'Data Structures': {
+			options: {
+				'Abstract Data Types': {
+					options: {
+						'List': {
+							path: '/DataStructures/AbstractDataTypes/List'
+						},
+
+						'Set': {
+							path: '/DataStructures/AbstractDataTypes/Set'
+						},
+
+						'Stack': {
+							path: '/DataStructures/AbstractDataTypes/Stack'
+						},
+
+						'Queue': {
+							path: '/DataStructures/AbstractDataTypes/Queue'
+						},
+
+						'Priority Queue': {
+							path: '/DataStructures/AbstractDataTypes/PriorityQueue'
+						},
+
+						'Map': {
+							path: '/DataStructures/AbstractDataTypes/Map'
+						},
+
+						'Tree': {
+							path: '/DataStructures/AbstractDataTypes/Tree'
+						},
+
+						'Graph': {
+							path: '/DataStructures/AbstractDataTypes/Graph'
+						}
+					}
+				},
+
+				'Linear Structures': {
+					options: {
+						'Array': {
+							path: '/DataStructures/LinearStructures/Array'
+						},
+
+						'Linked List': {
+							path: '/DataStructures/LinearStructures/LinkedList'
+						}
+					}
+				},
+
+				'Tree Structures': {
+					options: {
+						'Binary Search Tree': {
+							path: '/DataStructures/TreeStructures/BinarySearchTree'
+						},
+
+						'Heap': {
+							path: '/DataStructures/TreeStructures/Heap'
+						},
+
+						'B-Tree': {
+							path: '/DataStructures/TreeStructures/BTree'
+						}
+					}
+				},
+
+				'Hash Structures': {
+					options: {
+						'Hash Map': {
+							path: '/DataStructures/HashStructures/HashMap'
+						}
+					}
+				},
+
+				'Graph Structures': {
+					options: {
+						'Adjacency List': {
+							path: '/DataStructures/GraphStructures/AdjacencyList'
+						},
+
+						'Adjacency Matrix': {
+							path: '/DataStructures/GraphStructures/AdjacencyMatrix'
+						}
+					}
+				}
+			}
+		},
+
 		'Programming Paradigms': {
 			options: {
 				'Imperative': {
