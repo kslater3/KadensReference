@@ -6,6 +6,17 @@ body {
 }
 
 
+#homepage_link:link {
+	text-decoration: inherit;
+    color: inherit;
+}
+
+#homepage_link:visited {
+	text-decoration: inherit;
+    color: inherit;
+}
+
+
 #navbar_container {
 	width: 100%;
 	height: 100px;

@@ -10,24 +10,28 @@ class NavigationMenu {
 							path: '/Algorithms/Sort/MergeSort'
 						}
 					}
-				},
-
-				'Search': {
-					options: {
-						'Binary Search': {
-							path: '/Algorithms/Search/BinarySearch'
-						}
-					}
 				}
 			}
 		},
 
-		'Data Structures': {
+		'Programming Paradigms': {
 			options: {
-				'Abstract Data Types': {
+				'Imperative': {
 					options: {
-						'Tree': {
-							path: '/DataStructures/AbstractDataTypes/Tree'
+						'Procedural': {
+							path: '/ProgrammingParadigms/Imperative/Procedural'
+						},
+
+						'Object Oriented': {
+							path: '/ProgrammingParadigms/Imperative/ObjectOriented'
+						}
+					}
+				},
+
+				'Declarative': {
+					options: {
+						'Functional': {
+							path: '/ProgrammingParadigms/Declarative/Functional'
 						}
 					}
 				}
