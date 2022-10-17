@@ -70,8 +70,8 @@ class NavigationMenu {
 							path: '/DataStructures/TreeStructures/BinarySearchTree'
 						},
 
-						'Heap': {
-							path: '/DataStructures/TreeStructures/Heap'
+						'Binary Heap': {
+							path: '/DataStructures/TreeStructures/BinaryHeap'
 						},
 
 						'B-Tree': {
