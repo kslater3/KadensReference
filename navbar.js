@@ -1,238 +1,308 @@
-
-
 class NavigationMenu {
-	menu_options = {
-		'Algorithms': {
-			options: {
-				'Sort': {
-					options: {
-						'Merge Sort': {
-							path: '/Algorithms/Sort/MergeSort'
-						}
-					}
-				}
-			}
-		},
+    menu_options = {
+        'Algorithms': {
+            options: {
+                'Sort': {
+                    options: {
+                        'Merge Sort': {
+                            path: '/Algorithms/Sort/MergeSort'
+                        }
+                    }
+                }
+            }
+        },
 
-		'Data Structures': {
-			options: {
-				'Abstract Data Types': {
-					options: {
-						'List': {
-							path: '/DataStructures/AbstractDataTypes/List'
-						},
+        'Databases': {
+            path: '/Databases'
+        },
 
-						'Set': {
-							path: '/DataStructures/AbstractDataTypes/Set'
-						},
+        'Data Structures': {
+            options: {
+                'Abstract Data Types': {
+                    options: {
+                        'List': {
+                            path: '/DataStructures/AbstractDataTypes/List'
+                        },
 
-						'Stack': {
-							path: '/DataStructures/AbstractDataTypes/Stack'
-						},
+                        'Set': {
+                            path: '/DataStructures/AbstractDataTypes/Set'
+                        },
 
-						'Queue': {
-							path: '/DataStructures/AbstractDataTypes/Queue'
-						},
+                        'Stack': {
+                            path: '/DataStructures/AbstractDataTypes/Stack'
+                        },
 
-						'Priority Queue': {
-							path: '/DataStructures/AbstractDataTypes/PriorityQueue'
-						},
+                        'Queue': {
+                            path: '/DataStructures/AbstractDataTypes/Queue'
+                        },
 
-						'Map': {
-							path: '/DataStructures/AbstractDataTypes/Map'
-						},
+                        'Priority Queue': {
+                            path: '/DataStructures/AbstractDataTypes/PriorityQueue'
+                        },
 
-						'Tree': {
-							path: '/DataStructures/AbstractDataTypes/Tree'
-						},
+                        'Map': {
+                            path: '/DataStructures/AbstractDataTypes/Map'
+                        },
 
-						'Graph': {
-							path: '/DataStructures/AbstractDataTypes/Graph'
-						}
-					}
-				},
+                        'Tree': {
+                            path: '/DataStructures/AbstractDataTypes/Tree'
+                        },
 
-				'Linear Structures': {
-					options: {
-						'Array': {
-							path: '/DataStructures/LinearStructures/Array'
-						},
+                        'Graph': {
+                            path: '/DataStructures/AbstractDataTypes/Graph'
+                        }
+                    }
+                },
 
-						'Linked List': {
-							path: '/DataStructures/LinearStructures/LinkedList'
-						}
-					}
-				},
+                'Linear Structures': {
+                    options: {
+                        'Array': {
+                            path: '/DataStructures/LinearStructures/Array'
+                        },
 
-				'Tree Structures': {
-					options: {
-						'Binary Search Tree': {
-							path: '/DataStructures/TreeStructures/BinarySearchTree'
-						},
+                        'Linked List': {
+                            path: '/DataStructures/LinearStructures/LinkedList'
+                        }
+                    }
+                },
 
-						'Binary Heap': {
-							path: '/DataStructures/TreeStructures/BinaryHeap'
-						},
+                'Tree Structures': {
+                    options: {
+                        'Binary Search Tree': {
+                            path: '/DataStructures/TreeStructures/BinarySearchTree'
+                        },
 
-						'B-Tree': {
-							path: '/DataStructures/TreeStructures/BTree'
-						}
-					}
-				},
+                        'Binary Heap': {
+                            path: '/DataStructures/TreeStructures/BinaryHeap'
+                        },
 
-				'Hash Structures': {
-					options: {
-						'Hash Map': {
-							path: '/DataStructures/HashStructures/HashMap'
-						}
-					}
-				},
+                        'B-Tree': {
+                            path: '/DataStructures/TreeStructures/BTree'
+                        }
+                    }
+                },
 
-				'Graph Structures': {
-					options: {
-						'Adjacency List': {
-							path: '/DataStructures/GraphStructures/AdjacencyList'
-						},
+                'Hash Structures': {
+                    options: {
+                        'Hash Map': {
+                            path: '/DataStructures/HashStructures/HashMap'
+                        }
+                    }
+                },
 
-						'Adjacency Matrix': {
-							path: '/DataStructures/GraphStructures/AdjacencyMatrix'
-						}
-					}
-				}
-			}
-		},
+                'Graph Structures': {
+                    options: {
+                        'Adjacency List': {
+                            path: '/DataStructures/GraphStructures/AdjacencyList'
+                        },
 
-		'Programming Paradigms': {
-			options: {
-				'Imperative': {
-					options: {
-						'Procedural': {
-							path: '/ProgrammingParadigms/Imperative/Procedural'
-						},
+                        'Adjacency Matrix': {
+                            path: '/DataStructures/GraphStructures/AdjacencyMatrix'
+                        }
+                    }
+                }
+            }
+        },
 
-						'Object Oriented': {
-							path: '/ProgrammingParadigms/Imperative/ObjectOriented'
-						}
-					}
-				},
+        'Design Patterns': {
+            path: '/DesignPatterns'
+        },
 
-				'Declarative': {
-					options: {
-						'Functional': {
-							path: '/ProgrammingParadigms/Declarative/Functional'
-						}
-					}
-				}
-			}
-		}
-	}
+        'Design Principles': {
+            options: {
+                'Best Practices': {
+                    options: {
+                        'Composition Over Inheritance': {
+                            path: '/DesignPrinciples/BestPractices/CompositionOverInheritance'
+                        },
 
+                        'Encapsulate What Varies': {
+                            path: '/DesignPrinciples/BestPractices/EncapsulateVariation'
+                        },
 
-	isMenuOpen = false;
+                        'Interface Not Implementation': {
+                            path: '/DesignPrinciples/BestPractices/InterfaceNotImplementation'
+                        }
+                    }
+                },
 
+                'Good Design': {
+                    options: {
+                        'Reusability And Extensibility': {
+                            path: '/DesignPrinciples/GoodDesign/ReusabilityAndExtensibility'
+                        }
+                    }
+                },
 
-	constructor() {
-		this.navbar_container = document.getElementById('navbar_container');
+                'SOLID': {
+                    options: {
+                        'Dependency Inversion': {
+                            path: '/DesignPrinciples/SOLID/DependencyInversion'
+                        },
 
-		this.navbar_hamburger = document.getElementById('navbar_hamburger');
+                        'Interface Segregation': {
+                            path: '/DesignPrinciples/SOLID/InterfaceSegregation'
+                        },
 
-		this.navbar_hamburger.addEventListener('click', () => {
-			this.menuClick();
-		});
+                        'Liskov Substitution': {
+                            path: '/DesignPrinciples/SOLID/LiskovSubstitution'
+                        },
 
+                        'Open Closed': {
+                            path: '/DesignPrinciples/SOLID/OpenClosed'
+                        },
 
-		this.menu_container = document.createElement('div');
-		this.menu_container.id = 'menu_container';
-		this.menu_container.style.display = 'none';
+                        'Single Responsibility': {
+                            path: '/DesignPrinciples/SOLID/SingleResponsibility'
+                        }
+                    }
+                }
+            }
+        },
 
-		let afterNavbar = 0;
+        'Programming Paradigms': {
+            options: {
+                'Imperative': {
+                    options: {
+                        'Procedural': {
+                            path: '/ProgrammingParadigms/Imperative/Procedural'
+                        },
 
-		for(let i = 0; i < document.body.childNodes.length; i++) {
-			if(document.body.childNodes[i].id == 'navbar_container') {
-				afterNavbar = i + 1;
+                        'Object Oriented': {
+                            options: {
+                                'Pillars Of OOP': {
+                                    path: '/ProgrammingParadigms/ObjectOriented/PillarsOfOOP'
+                                },
 
-				break;
-			}
-		}
+                                'Relations Between Objects': {
+                                    path: '/ProgrammingParadigms/ObjectOriented/RelationsBetweenObjects'
+                                }
+                            }
+                        }
+                    }
+                },
 
-		document.body.insertBefore(this.menu_container, document.body.childNodes[afterNavbar]);
+                'Declarative': {
+                    options: {
+                        'Functional': {
+                            path: '/ProgrammingParadigms/Declarative/Functional'
+                        }
+                    }
+                }
+            }
+        },
 
-
-		this.initialize_table();
-	}
-
-
-	build_submenu(optionName, subOptions, domParent) {
-		let submenu_item = document.createElement('div');
-
-		if('options' in subOptions) {
-			//TODO: put the dropdown arrow image and handle swapping the up and down image
-			let submenu_header = document.createElement('div');
-			submenu_header.className = 'submenu_header';
-			submenu_header.innerHTML = optionName;
-
-			submenu_item.appendChild(submenu_header);
-
-			let nested_submenu = document.createElement('div');
-			nested_submenu.className = 'nested_submenu';
-			nested_submenu.style.display = 'none'; // Initially, but the click handler will toggle this
-
-			submenu_header.addEventListener('click', () => {
-				if(nested_submenu.style.display == 'none') {
-					nested_submenu.style.display = 'block';
-				}else {
-					nested_submenu.style.display = 'none';
-				}
-			});
-
-			for(const [key, value] of Object.entries(subOptions.options)) {
-				this.build_submenu(key, subOptions.options[key], nested_submenu);
-			}
-
-			submenu_item.appendChild(nested_submenu);
-		}else {
-			let link = document.createElement('a');
-			link.href = subOptions.path;
-			link.target = '_blank';
-			link.className = 'submenu_link';
-
-			let submenu_header = document.createElement('div');
-			submenu_header.className = 'submenu_header';
-			submenu_header.innerHTML = optionName;
-
-			link.appendChild(submenu_header);
-
-			submenu_item.appendChild(link);
-		}
-
-		domParent.appendChild(submenu_item);
-	}
-
-	initialize_table() {
-		let option_container;
-
-		for(const [key, value] of Object.entries(this.menu_options)) {
-			option_container = document.createElement('div');
-			option_container.className = 'option_container';
-
-			this.build_submenu(key, this.menu_options[key], option_container);
-
-			this.menu_container.appendChild(option_container);
-		}
-
-	}
+        'Testing': {
+            path: '/Testing'
+        }
+    }
 
 
-	menuClick() {
-		if(this.isMenuOpen) {
-			this.menu_container.style.display = 'none';
-		}else {
-			this.menu_container.style.display = 'block';
-		}
+    isMenuOpen = false;
 
 
-		this.isMenuOpen = !this.isMenuOpen;
-	}
+    constructor() {
+        this.navbar_container = document.getElementById('navbar_container');
+
+        this.navbar_hamburger = document.getElementById('navbar_hamburger');
+
+        this.navbar_hamburger.addEventListener('click', () => {
+            this.menuClick();
+        });
+
+
+        this.menu_container = document.createElement('div');
+        this.menu_container.id = 'menu_container';
+        this.menu_container.style.display = 'none';
+
+        let afterNavbar = 0;
+
+        for (let i = 0; i < document.body.childNodes.length; i++) {
+            if (document.body.childNodes[i].id == 'navbar_container') {
+                afterNavbar = i + 1;
+
+                break;
+            }
+        }
+
+        document.body.insertBefore(this.menu_container, document.body.childNodes[afterNavbar]);
+
+
+        this.initialize_table();
+    }
+
+
+    build_submenu(optionName, subOptions, domParent) {
+        let submenu_item = document.createElement('div');
+
+        if ('options' in subOptions) {
+            //TODO: put the dropdown arrow image and handle swapping the up and down image
+            let submenu_header = document.createElement('div');
+            submenu_header.className = 'submenu_header';
+            submenu_header.innerHTML = optionName;
+
+            submenu_item.appendChild(submenu_header);
+
+            let nested_submenu = document.createElement('div');
+            nested_submenu.className = 'nested_submenu';
+            nested_submenu.style.display = 'none'; // Initially, but the click handler will toggle this
+
+            submenu_header.addEventListener('click', () => {
+                if (nested_submenu.style.display == 'none') {
+                    nested_submenu.style.display = 'block';
+                } else {
+                    nested_submenu.style.display = 'none';
+                }
+            });
+
+            for (const [key, value] of Object.entries(subOptions.options)) {
+                this.build_submenu(key, subOptions.options[key], nested_submenu);
+            }
+
+            submenu_item.appendChild(nested_submenu);
+        } else {
+            let link = document.createElement('a');
+            link.href = subOptions.path;
+            link.target = '_blank';
+            link.className = 'submenu_link';
+
+            let submenu_header = document.createElement('div');
+            submenu_header.className = 'submenu_header';
+            submenu_header.innerHTML = optionName;
+
+            link.appendChild(submenu_header);
+
+            submenu_item.appendChild(link);
+        }
+
+        domParent.appendChild(submenu_item);
+    }
+
+    initialize_table() {
+        let option_container;
+
+        for (const [key, value] of Object.entries(this.menu_options)) {
+            option_container = document.createElement('div');
+            option_container.className = 'option_container';
+
+            this.build_submenu(key, this.menu_options[key], option_container);
+
+            this.menu_container.appendChild(option_container);
+        }
+
+    }
+
+
+    menuClick() {
+        if (this.isMenuOpen) {
+            this.menu_container.style.display = 'none';
+        } else {
+            this.menu_container.style.display = 'block';
+        }
+
+
+        this.isMenuOpen = !this.isMenuOpen;
+    }
 }
 
 
@@ -240,5 +310,5 @@ class NavigationMenu {
 
 
 window.onload = function() {
-	let menu = new NavigationMenu(navbar_container, navbar_hamburger);
+    let menu = new NavigationMenu(navbar_container, navbar_hamburger);
 }
